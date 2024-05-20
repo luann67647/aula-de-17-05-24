@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+     font-family: roboto;
+}
+
+:root{
+    
+    --powhite: #fff;
+}
+
+.carousel-item{
+height: 500px;
+
+}
+
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-item::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgb(31, 31, 31, 31));
+}
+
+.menu-bg{
+    background: blue;
+    
+}
+
+.menu{
+    max-width: 960px;
+    margin: auto;
+    height: 80px;
+    /* padding: 15px 0; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.menu a{
+    color: var(--powhite);
+
+
+}
+.menu-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    
+    
+    
+}
+
+
+.menu-logo a{
+    font-size: 2.25em;
+    font-variant: bold;
+    /* margin:10px;*/
+}
+
+.menu-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+}
+.menu-nav ul{
+    display: flex;
+    /* flex-wrap: wrap*/
+
+}
+.menu-nav a{
+    font-size: 1.25em;
+    display: block;
+    padding: 10px 20px;
+    border: 2px solid(255, 255, 255) ;
+    background-color: red;
+    margin: 5px 10px;
+    justify-content: space-between ;
+
+}
+.menu-nav a:hover{
+    color: black;
+    background-color: aquamarine;
+}
+.menu img{
+    width: 90px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: black;
+    margin: 5px 10px;
+    
+}
+.card {
+    border: none;
+    transition: all 0.3s;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  .card:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .card-body {
+    padding: 20px;
+  }
+  .card-title {
+    font-weight: bold;
+  }
+  .card-text {
+    color: #6c757d;
+  }
+  .btn-comprar {
+    background-color: a;
+    border-color: #61a8ff;
+  }
+  .btn-comprar:hover {
+    background-color: #4962eea7;
+    border-color: #4988ee;
+
+}
+.carousel {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel__container {
+    display: flex;
+    transition: transform 1s ease;
+  }
+  
+  .carousel__slide {
+    flex: 0 0 100%;
+  }
+  
+  .carousel__container:hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes carousel {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .carousel__container {
+    animation: carousel 5s infinite alternate;
+  }
+  .img{
+    height: 200px;
+  }
+  
+ 
+
